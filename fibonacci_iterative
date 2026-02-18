@@ -1,0 +1,48 @@
+def fibo_iterative(a):
+    x=0
+    y=1
+    z=1
+    print(x)
+    print(y)
+    print(z)
+    count=3
+    for i in range(3,a,3):
+        x=y+z
+        count+=1
+        y=z+x
+        count += 1
+        z=x+y
+        count += 1
+        print(x)
+        print(y)
+        print(z)
+
+fibo_iterative(13)
+
+def fibo_iter(a):
+    x=1
+    y=1
+    z=2
+    print(x)
+    print(y)
+    print(z)
+    counter=3
+    while counter <a:
+        x=y+z
+        counter+=1
+        print(x)
+        if counter<a:
+            y=z+x
+            counter += 1
+            print(y)
+        else:
+            break
+        if counter<a:
+            z=x+y
+            counter += 1
+            print(z)
+        else:
+            break
+
+
+fibo_iter(8)
